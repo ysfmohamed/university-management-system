@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        UMSEngine umsEngine = new UMSEngine();
+        UMSEngine umsEngine = UMSEngine.getInstance();
         umsEngine.run();
     }
 }

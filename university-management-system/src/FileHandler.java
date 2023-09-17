@@ -8,10 +8,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-// TODO removing all boolean return
 
 public class FileHandler {
-    public static List<User> readUsersFile() {
+    private static FileHandler fileHandler = new FileHandler();
+
+    private FileHandler() {}
+
+    public static FileHandler getInstance() {
+        return fileHandler;
+    }
+
+    public List<User> readUsersFile() {
         ObjectMapper mapper = new ObjectMapper();
         List<User> users = new ArrayList<>();
 
@@ -25,7 +32,7 @@ public class FileHandler {
         return users;
     }
 
-    public static List<Course> readCoursesFile() {
+    public List<Course> readCoursesFile() {
         ObjectMapper mapper = new ObjectMapper();
         List<Course> courses = new ArrayList<>();
 
@@ -39,7 +46,7 @@ public class FileHandler {
         return courses;
     }
 
-    public static List<Request> readRequestsFile() {
+    public List<Request> readRequestsFile() {
         ObjectMapper mapper = new ObjectMapper();
         List<Request> requests = new ArrayList<>();
 
@@ -53,7 +60,7 @@ public class FileHandler {
         return requests;
     }
 
-    public static boolean saveUser(Map<String, User> oldUsersTableData, User userToBeSaved) {
+    public boolean saveUser(Map<String, User> oldUsersTableData, User userToBeSaved) {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
@@ -77,7 +84,7 @@ public class FileHandler {
         return true;
     }
 
-    public static boolean saveUser(Map<String, User> oldUsersTableData) {
+    public boolean saveUser(Map<String, User> oldUsersTableData) {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
@@ -98,7 +105,7 @@ public class FileHandler {
         return true;
     }
 
-    public static boolean saveRequest(Map<String, Request> oldRequestTableData, Request requestToBeAdded) {
+    public boolean saveRequest(Map<String, Request> oldRequestTableData, Request requestToBeAdded) {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
@@ -119,7 +126,7 @@ public class FileHandler {
         return true;
     }
 
-    public static boolean saveCourse(Map<String, Course> oldCoursesTableData, Course courseToBeSaved) {
+    public boolean saveCourse(Map<String, Course> oldCoursesTableData, Course courseToBeSaved) {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
@@ -142,7 +149,7 @@ public class FileHandler {
         return true;
     }
 
-    public static boolean saveCourse(Map<String, Course> oldCoursesTableData) {
+    public boolean saveCourse(Map<String, Course> oldCoursesTableData) {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
@@ -162,7 +169,7 @@ public class FileHandler {
         return true;
     }
 
-    public static boolean deleteRequest(Map<String, Request> oldRequestsTableData, Request requestToBeDeleted) {
+    public boolean deleteRequest(Map<String, Request> oldRequestsTableData, Request requestToBeDeleted) {
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
 

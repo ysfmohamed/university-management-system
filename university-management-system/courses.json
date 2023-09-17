@@ -1,1 +1,46 @@
-[]
+[ {
+  "id" : "CS127",
+  "name" : "Data Structures",
+  "creditHours" : 3,
+  "maxStudents" : 5,
+  "price" : 3450,
+  "specialization" : "Computer Science",
+  "studentEmails" : [ ],
+  "teacherEmails" : [ ]
+}, {
+  "id" : "CS227",
+  "name" : "Introduction to Databases",
+  "creditHours" : 2,
+  "maxStudents" : 5,
+  "price" : 2300,
+  "specialization" : "Computer Science",
+  "studentEmails" : [ "joe@gmail.com" ],
+  "teacherEmails" : [ ]
+}, {
+  "id" : "CS125",
+  "name" : "Introduction to Programming",
+  "creditHours" : 3,
+  "maxStudents" : 6,
+  "price" : 3450,
+  "specialization" : "Computer Science",
+  "studentEmails" : [ ],
+  "teacherEmails" : [ ]
+}, {
+  "id" : "CS225",
+  "name" : "Introduction to Algorithms",
+  "creditHours" : 4,
+  "maxStudents" : 3,
+  "price" : 4600,
+  "specialization" : "Computer Science",
+  "studentEmails" : [ ],
+  "teacherEmails" : [ ]
+}, {
+  "id" : "CS335",
+  "name" : "Advanced Databases",
+  "creditHours" : 3,
+  "maxStudents" : 4,
+  "price" : 3450,
+  "specialization" : "Computer Science",
+  "studentEmails" : [ ],
+  "teacherEmails" : [ ]
+} ]

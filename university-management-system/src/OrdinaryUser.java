@@ -1,8 +1,5 @@
 import lombok.Data;
 
-import java.util.Map;
-import java.util.Set;
-
 @Data
 public abstract class OrdinaryUser extends User {
     private OrdinaryUserType type;
@@ -20,6 +17,4 @@ public abstract class OrdinaryUser extends User {
     public boolean signup(User user) {
         return true;
     }
-
-    public abstract boolean registerInCourse(Map<String, Set<String>> userPerCoursesTableData, Map<String, Course> coursesTableData, Map<String, User> usersTableData, String courseId);
 }

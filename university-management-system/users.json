@@ -1,1 +1,26 @@
-[]
+[ {
+  "id" : "1f41cfe2-50f3-481a-aa32-2b280e322a28",
+  "name" : "Youssef",
+  "email" : "joe@gmail.com",
+  "password" : "123",
+  "type" : "STUDENT",
+  "gender" : false,
+  "seatNumber" : "2018170484",
+  "balance" : 39700
+}, {
+  "id" : "3d466b18-0fea-4250-91cb-85ddd1e4a7b8",
+  "name" : "Salah",
+  "email" : "salah@gmail.com",
+  "password" : "12345",
+  "type" : "TEACHER",
+  "gender" : false,
+  "specialization" : "Computer Science"
+}, {
+  "id" : "a5b37c3c-4357-4f33-8c53-6fd1432e07b0",
+  "name" : "Ahmed",
+  "email" : "ahmed@gmail.com",
+  "password" : "1234",
+  "type" : "TEACHER",
+  "gender" : false,
+  "specialization" : "Computer Science"
+} ]
